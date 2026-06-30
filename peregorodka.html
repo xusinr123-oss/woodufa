@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Деревянные перегородки в интерьере — Деревянная Уфа</title>
+    <meta name="description" content="Идеи зонирования пространства с помощью деревянных реек и слэбов. Стильные решения для квартиры и дома. Фото примеры и советы по дизайну.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <style>
+        /* --- ЕДИНЫЙ СТИЛЬ С ГЛАВНОЙ СТРАНИЦЕЙ --- */
+        :root {
+            --primary: #3A4D3F;
+            --primary-dark: #263329;
+            --accent: #C69C6D;
+            --bg-light: #FDFCF8;
+            --bg-secondary: #F2F0EB;
+            --text-main: #2C2C2C;
+            --text-light: #666666;
+            --white: #FFFFFF;
+            --font-head: 'Playfair Display', serif;
+            --font-body: 'Manrope', sans-serif;
+            --radius-sm: 8px;
+            --radius-md: 16px;
+            --radius-lg: 30px;
+            --shadow: 0 10px 40px -10px rgba(58, 77, 63, 0.1);
+            --transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: var(--font-body);
+            background-color: var(--bg-light);
+            color: var(--text-main);
+            line-height: 1.7;
+            padding: 0 20px;
+        }
+        .container {
+            max-width: 880px;
+            margin: 0 auto;
+            padding: 40px 20px 80px;
+        }
+        a { text-decoration: none; color: inherit; }
+        .btn {
+            display: inline-block;
+            padding: 14px 32px;
+            border-radius: var(--radius-lg);
+            font-weight: 600;
+            cursor: pointer;
+            border: none;
+            transition: var(--transition);
+            font-size: 1rem;
+            background-color: var(--primary);
+            color: var(--white);
+        }
+        .btn:hover {
+            background-color: var(--primary-dark);
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(58, 77, 63, 0.2);
+        }
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 40px;
+            font-weight: 500;
+            color: var(--text-light);
+            transition: var(--transition);
+        }
+        .back-link:hover { color: var(--primary); }
+        .back-link svg { width: 20px; height: 20px; }
+
+        .article-header {
+            margin-bottom: 50px;
+            border-bottom: 2px solid var(--bg-secondary);
+            padding-bottom: 30px;
+        }
+        .article-header h1 {
+            font-family: var(--font-head);
+            font-size: 2.8rem;
+            color: var(--primary);
+            line-height: 1.2;
+            margin-bottom: 20px;
+        }
+        .article-meta {
+            color: var(--text-light);
+            font-size: 0.95rem;
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .article-meta span { display: flex; align-items: center; gap: 6px; }
+
+        .article-body h2 {
+            font-family: var(--font-head);
+            font-size: 2rem;
+            color: var(--primary);
+            margin-top: 50px;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid var(--bg-secondary);
+        }
+        .article-body h3 {
+            font-family: var(--font-head);
+            font-size: 1.4rem;
+            color: var(--primary-dark);
+            margin-top: 30px;
+            margin-bottom: 15px;
+        }
+        .article-body p {
+            margin-bottom: 20px;
+            color: var(--text-main);
+        }
+        .article-body ul, .article-body ol {
+            margin: 20px 0 30px 25px;
+        }
+        .article-body li {
+            margin-bottom: 12px;
+            padding-left: 8px;
+        }
+        .article-body strong { color: var(--primary); }
+        .article-body .highlight-box {
+            background: var(--bg-secondary);
+            padding: 30px 35px;
+            border-radius: var(--radius-md);
+            margin: 35px 0;
+            border-left: 6px solid var(--accent);
+        }
+        .article-body .highlight-box p:last-child { margin-bottom: 0; }
+
+        .idea-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            margin: 30px 0 40px;
+        }
+        .idea-card {
+            background: var(--white);
+            border-radius: var(--radius-md);
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+        }
+        .idea-card:hover { transform: translateY(-6px); }
+        .idea-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            display: block;
+            background: var(--bg-secondary);
+        }
+        .idea-card .idea-body {
+            padding: 20px 22px;
+        }
+        .idea-card .idea-body h4 {
+            font-family: var(--font-head);
+            color: var(--primary);
+            font-size: 1.15rem;
+            margin-bottom: 8px;
+        }
+        .idea-card .idea-body p {
+            color: var(--text-light);
+            font-size: 0.95rem;
+            margin-bottom: 0;
+        }
+
+        .verdict-box {
+            background: var(--primary);
+            color: var(--white);
+            padding: 30px 35px;
+            border-radius: var(--radius-md);
+            margin: 40px 0;
+        }
+        .verdict-box h3 {
+            font-family: var(--font-head);
+            color: var(--accent);
+            margin-bottom: 15px;
+        }
+        .verdict-box p { color: rgba(255,255,255,0.9); }
+        .verdict-box strong { color: var(--white); }
+
+        .faq-mini {
+            margin: 40px 0;
+        }
+        .faq-mini-item {
+            background: var(--white);
+            border-radius: var(--radius-sm);
+            margin-bottom: 12px;
+            padding: 18px 25px;
+            box-shadow: var(--shadow);
+            border-left: 4px solid var(--accent);
+        }
+        .faq-mini-item h4 {
+            font-weight: 600;
+            color: var(--primary);
+            margin-bottom: 6px;
+        }
+        .faq-mini-item p { color: var(--text-light); margin-bottom: 0; }
+
+        .btn-center {
+            text-align: center;
+            margin: 50px 0 20px;
+        }
+
+        /* --- АДАПТИВ --- */
+        @media (max-width: 768px) {
+            .container { padding: 20px 10px 60px; }
+            .article-header h1 { font-size: 2rem; }
+            .idea-grid { grid-template-columns: 1fr; }
+            .article-body h2 { font-size: 1.6rem; }
+            .highlight-box, .verdict-box { padding: 20px; }
+        }
+        @media (max-width: 480px) {
+            .article-header h1 { font-size: 1.6rem; }
+            .article-meta { font-size: 0.8rem; gap: 12px; flex-direction: column; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+    <!-- КНОПКА НА ГЛАВНУЮ -->
+    <a href="index.html" class="back-link">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M19 12H5M12 19l-7-7 7-7"/>
+        </svg>
+        На главную
+    </a>
+
+    <!-- СТАТЬЯ -->
+    <article class="article-body">
+
+        <div class="article-header">
+            <h1>Деревянные перегородки в интерьере: как зонировать пространство с помощью реек и слэбов</h1>
+            <div class="article-meta">
+                <span>📅 30 июня 2026</span>
+                <span>⏱ 7 минут чтения</span>
+                <span>🏷️ #перегородки #зонирование #дерево</span>
+            </div>
+        </div>
+
+        <p style="font-size: 1.15rem; font-weight: 400; color: var(--text-light);">
+            Деревянные перегородки — это не просто способ разделить комнату, а полноценный дизайнерский приём. Они добавляют уют, структуру и природную красоту в любой интерьер. В этой статье разбираем, как использовать рейки и слэбы для зонирования, и показываем вдохновляющие примеры.
+        </p>
+
+        <h2>Зачем нужны деревянные перегородки?</h2>
+        <p>В современных квартирах-студиях и открытых планировках вопрос зонирования стоит особенно остро. Деревянные перегородки решают сразу несколько задач:</p>
+        <ul>
+            <li><strong>Разделение пространства</strong> — визуально отделяют гостиную от спальни, кухню от столовой, прихожую от гостиной.</li>
+            <li><strong>Сохранение света</strong> — реечные конструкции пропускают воздух и свет, не создавая глухих стен.</li>
+            <li><strong>Декоративная функция</strong> — дерево само по себе украшает интерьер, добавляет текстуру и тепло.</li>
+            <li><strong>Акустический комфорт</strong> — при правильной конструкции перегородки могут частично гасить шум.</li>
+        </ul>
+
+        <div class="highlight-box">
+            <p><strong>💡 Главное преимущество:</strong> деревянные перегородки — это всегда уникальный элемент. Каждое изделие имеет свой рисунок, цвет и фактуру, что делает интерьер неповторимым.</p>
+        </div>
+
+        <h2>Виды деревянных перегородок</h2>
+
+        <h3>1. Реечные перегородки (вертикальные / горизонтальные / диагональные)</h3>
+        <p>Самый популярный и универсальный вариант. Рейки из массива сосны, дуба или ясеня крепятся на направляющие с равномерным шагом. Ширина реек и расстояние между ними могут варьироваться — от частого «шторного» ритма до редких, почти скульптурных линий.</p>
+        <ul>
+            <li><strong>Вертикальные рейки</strong> — зрительно вытягивают потолок, делают комнату выше.</li>
+            <li><strong>Горизонтальные</strong> — расширяют пространство, подходят для широких помещений.</li>
+            <li><strong>Диагональные</strong> — добавляют динамику и движение, часто используются в современных интерьерах.</li>
+        </ul>
+
+        <h3>2. Перегородки из слэбов (массивных щитов)</h3>
+        <p>Слэбы — это цельные куски дерева (обычно дуба или ясеня) толщиной 40–60 мм, соединённые в единую панель. Такие перегородки выглядят монументально и статусно. Они могут быть как глухими, так и с декоративными вставками (стекло, металл).</p>
+        <ul>
+            <li><strong>Полные слэбы</strong> — для полного разделения комнат (например, спальня и гардеробная).</li>
+            <li><strong>Комбинированные</strong> — дерево + матовое стекло или металлические вставки.</li>
+        </ul>
+
+        <h3>3. Мобильные и раздвижные перегородки</h3>
+        <p>Направляющие системы позволяют делать перегородки раздвижными или складными. Это удобно, если нужно иногда объединять пространство, а иногда — разделять.</p>
+
+        <h2>Идеи для вдохновения: фото-примеры</h2>
+
+        <div class="idea-grid">
+            <div class="idea-card">
+                <img src="image/per.jpg" alt="Перегородка из вертикальных реек для зонирования гостиной" loading="lazy">
+                <div class="idea-body">
+                    <h4>Вертикальные рейки в гостиной</h4>
+                    <p>Рейки из сосны с шагом 4 см отделяют зону отдыха от кабинета. Сохраняется ощущение простора, но появляется чёткая граница.</p>
+                </div>
+            </div>
+            <div class="idea-card">
+                <img src="image/per1.jpg" alt="Декоративная перегородка из сосны в прихожей" loading="lazy">
+                <div class="idea-body">
+                    <h4>Прихожая — гостиная</h4>
+                    <p>Редкие горизонтальные рейки из сосны зонируют прихожую, не перекрывая свет и создавая лёгкий визуальный барьер.</p>
+                </div>
+            </div>
+            <div class="idea-card">
+                <img src="image/per2.jpg" alt="Ясеневая перегородка с диагональным рисунком" loading="lazy">
+                <div class="idea-body">
+                    <h4>Диагональный ритм из ясеня</h4>
+                    <p>Нестандартное решение для студии: диагональные рейки из ясеня добавляют динамику и современный акцент.</p>
+                </div>
+            </div>
+            <div class="idea-card">
+                <img src="image/per3.jpg" alt="Массивная перегородка из дубовых слэбов" loading="lazy">
+                <div class="idea-body">
+                    <h4>Слэбовая перегородка из дуба</h4>
+                    <p>Премиальный вариант: цельные дубовые щиты с живой кромкой. Разделяет спальню и гардеробную, создавая атмосферу роскоши.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="highlight-box" style="border-left-color: var(--primary);">
+            <p><strong>📌 Важно:</strong> все перегородки, представленные на фото, изготовлены в мастерской «Деревянная Уфа». Мы делаем их на заказ по вашим размерам — от эскиза до установки.</p>
+        </div>
+
+        <h2>Где использовать деревянные перегородки?</h2>
+        <ul>
+            <li><strong>Студии и лофты</strong> — отделите спальную зону от гостиной, сохранив ощущение открытого пространства.</li>
+            <li><strong>Кухня-гостиная</strong> — рейки между кухней и столовой зоной добавляют уют и скрывают рабочий беспорядок.</li>
+            <li><strong>Прихожая</strong> — лёгкая перегородка отделяет входную зону, не загромождая пространство.</li>
+            <li><strong>Детская комната</strong> — зонирование на игровую и спальную зоны с помощью безопасных деревянных реек.</li>
+            <li><strong>Офисные и коммерческие помещения</strong> — создание переговорных зон или ресепшенов с сохранением света.</li>
+        </ul>
+
+        <h2>Как выбрать породу дерева для перегородки?</h2>
+        <ul>
+            <li><strong>Сосна</strong> — бюджетный вариант, светлая, с выраженной текстурой. Подходит для большинства интерьеров.</li>
+            <li><strong>Ясень</strong> — светлый, прочный, с красивым рисунком. Отличный выбор для современных стилей.</li>
+            <li><strong>Дуб</strong> — премиум-класс, твёрдый, благородный, с богатой палитрой оттенков. Используется для статусных проектов.</li>
+        </ul>
+
+        <div class="verdict-box">
+            <h3>🏁 Итог: почему стоит заказать перегородку из дерева?</h3>
+            <p><strong>Уникальность</strong> — каждая перегородка имеет свой природный рисунок.</p>
+            <p><strong>Экологичность</strong> — натуральное дерево безопасно для здоровья.</p>
+            <p><strong>Функциональность</strong> — зонирование без потери света и воздуха.</p>
+            <p><strong>Долговечность</strong> — при правильном уходе деревянная перегородка прослужит десятилетиями.</p>
+            <p style="margin-top: 15px;">В «Деревянной Уфе» мы создаём перегородки из массива сосны, ясеня и дуба по вашим размерам. Выезжаем на замер, разрабатываем дизайн, изготавливаем и устанавливаем. <a href="index.html#contacts" style="color: var(--accent); font-weight: 600; text-decoration: underline;">Свяжитесь с нами</a> для консультации.</p>
+        </div>
+
+        <h2>Частые вопросы о деревянных перегородках</h2>
+
+        <div class="faq-mini">
+            <div class="faq-mini-item">
+                <h4>❓ Можно ли сделать перегородку в арендованной квартире?</h4>
+                <p>Да. Мы предлагаем варианты без повреждения стен — раздвижные и мобильные перегородки, которые не требуют капитального монтажа.</p>
+            </div>
+            <div class="faq-mini-item">
+                <h4>❓ Сколько стоит изготовление перегородки?</h4>
+                <p>Цена зависит от породы дерева, толщины, сложности конструкции и размеров. Например, перегородка из сосны (2500×1000×60 мм) — от 15 000 ₽. Дубовые слэбы — от 40 000 ₽ за погонный метр.</p>
+            </div>
+            <div class="faq-mini-item">
+                <h4>❓ Нужно ли обрабатывать деревянную перегородку?</h4>
+                <p>Да, мы покрываем все изделия натуральным маслом Osmo, которое защищает от влаги и загрязнений, сохраняя природную красоту дерева.</p>
+            </div>
+            <div class="faq-mini-item">
+                <h4>❓ Как ухаживать за деревянной перегородкой?</h4>
+                <p>Достаточно регулярно протирать её мягкой тканью. Раз в 1–2 года рекомендуется обновлять масляное покрытие.</p>
+            </div>
+        </div>
+
+        <div class="highlight-box" style="border-left-color: var(--accent);">
+            <p><strong>🌟 Больше идей и фото готовых проектов</strong> — в нашем <a href="index.html#catalog" style="color: var(--accent); font-weight: 600;">каталоге</a>. Мы регулярно добавляем новые работы. Подписывайтесь на наш MAX, чтобы следить за обновлениями.</p>
+        </div>
+
+        <div class="btn-center">
+            <a href="index.html" class="btn">← Вернуться на главную</a>
+        </div>
+
+    </article>
+</div>
+
+</body>
+</html>

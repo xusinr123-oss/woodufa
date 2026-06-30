@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Уход за мебелью из массива — Деревянная Уфа</title>
+    <meta name="description" content="Чем мыть, как обновлять покрытие и убирать царапины на деревянной мебели. Секреты долговечности и сохранения красоты натуральной древесины.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <style>
+        /* --- ЕДИНЫЙ СТИЛЬ С ГЛАВНОЙ СТРАНИЦЕЙ --- */
+        :root {
+            --primary: #3A4D3F;
+            --primary-dark: #263329;
+            --accent: #C69C6D;
+            --bg-light: #FDFCF8;
+            --bg-secondary: #F2F0EB;
+            --text-main: #2C2C2C;
+            --text-light: #666666;
+            --white: #FFFFFF;
+            --font-head: 'Playfair Display', serif;
+            --font-body: 'Manrope', sans-serif;
+            --radius-sm: 8px;
+            --radius-md: 16px;
+            --radius-lg: 30px;
+            --shadow: 0 10px 40px -10px rgba(58, 77, 63, 0.1);
+            --transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: var(--font-body);
+            background-color: var(--bg-light);
+            color: var(--text-main);
+            line-height: 1.7;
+            padding: 0 20px;
+        }
+        .container {
+            max-width: 880px;
+            margin: 0 auto;
+            padding: 40px 20px 80px;
+        }
+        a { text-decoration: none; color: inherit; }
+        .btn {
+            display: inline-block;
+            padding: 14px 32px;
+            border-radius: var(--radius-lg);
+            font-weight: 600;
+            cursor: pointer;
+            border: none;
+            transition: var(--transition);
+            font-size: 1rem;
+            background-color: var(--primary);
+            color: var(--white);
+        }
+        .btn:hover {
+            background-color: var(--primary-dark);
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(58, 77, 63, 0.2);
+        }
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 40px;
+            font-weight: 500;
+            color: var(--text-light);
+            transition: var(--transition);
+        }
+        .back-link:hover { color: var(--primary); }
+        .back-link svg { width: 20px; height: 20px; }
+
+        .article-header {
+            margin-bottom: 50px;
+            border-bottom: 2px solid var(--bg-secondary);
+            padding-bottom: 30px;
+        }
+        .article-header h1 {
+            font-family: var(--font-head);
+            font-size: 2.8rem;
+            color: var(--primary);
+            line-height: 1.2;
+            margin-bottom: 20px;
+        }
+        .article-meta {
+            color: var(--text-light);
+            font-size: 0.95rem;
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .article-meta span { display: flex; align-items: center; gap: 6px; }
+
+        .article-body h2 {
+            font-family: var(--font-head);
+            font-size: 2rem;
+            color: var(--primary);
+            margin-top: 50px;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid var(--bg-secondary);
+        }
+        .article-body h3 {
+            font-family: var(--font-head);
+            font-size: 1.4rem;
+            color: var(--primary-dark);
+            margin-top: 30px;
+            margin-bottom: 15px;
+        }
+        .article-body p {
+            margin-bottom: 20px;
+            color: var(--text-main);
+        }
+        .article-body ul, .article-body ol {
+            margin: 20px 0 30px 25px;
+        }
+        .article-body li {
+            margin-bottom: 12px;
+            padding-left: 8px;
+        }
+        .article-body strong { color: var(--primary); }
+        .article-body .highlight-box {
+            background: var(--bg-secondary);
+            padding: 30px 35px;
+            border-radius: var(--radius-md);
+            margin: 35px 0;
+            border-left: 6px solid var(--accent);
+        }
+        .article-body .highlight-box p:last-child { margin-bottom: 0; }
+        .article-body .highlight-box ul { margin-bottom: 0; }
+
+        .step-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            margin: 30px 0 40px;
+        }
+        .step-card {
+            background: var(--white);
+            padding: 25px;
+            border-radius: var(--radius-md);
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+        }
+        .step-card:hover { transform: translateY(-4px); }
+        .step-card .step-num {
+            display: inline-block;
+            background: var(--primary);
+            color: var(--white);
+            font-weight: 700;
+            font-size: 1.2rem;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 40px;
+            margin-bottom: 15px;
+        }
+        .step-card h4 {
+            font-family: var(--font-head);
+            color: var(--primary);
+            font-size: 1.2rem;
+            margin-bottom: 8px;
+        }
+        .step-card p { color: var(--text-light); font-size: 0.95rem; margin-bottom: 0; }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 20px;
+            margin: 25px 0 35px;
+        }
+        .product-item {
+            background: var(--white);
+            padding: 20px;
+            border-radius: var(--radius-sm);
+            text-align: center;
+            box-shadow: var(--shadow);
+        }
+        .product-item .icon { font-size: 2.4rem; display: block; margin-bottom: 10px; }
+        .product-item h5 { color: var(--primary); font-weight: 600; margin-bottom: 6px; }
+        .product-item p { font-size: 0.9rem; color: var(--text-light); margin-bottom: 0; }
+
+        .verdict-box {
+            background: var(--primary);
+            color: var(--white);
+            padding: 30px 35px;
+            border-radius: var(--radius-md);
+            margin: 40px 0;
+        }
+        .verdict-box h3 {
+            font-family: var(--font-head);
+            color: var(--accent);
+            margin-bottom: 15px;
+        }
+        .verdict-box p { color: rgba(255,255,255,0.9); }
+        .verdict-box strong { color: var(--white); }
+
+        .faq-mini {
+            margin: 40px 0;
+        }
+        .faq-mini-item {
+            background: var(--white);
+            border-radius: var(--radius-sm);
+            margin-bottom: 12px;
+            padding: 18px 25px;
+            box-shadow: var(--shadow);
+            border-left: 4px solid var(--accent);
+        }
+        .faq-mini-item h4 {
+            font-weight: 600;
+            color: var(--primary);
+            margin-bottom: 6px;
+        }
+        .faq-mini-item p { color: var(--text-light); margin-bottom: 0; }
+
+        .btn-center {
+            text-align: center;
+            margin: 50px 0 20px;
+        }
+
+        /* --- АДАПТИВ --- */
+        @media (max-width: 768px) {
+            .container { padding: 20px 10px 60px; }
+            .article-header h1 { font-size: 2rem; }
+            .step-grid { grid-template-columns: 1fr; }
+            .product-grid { grid-template-columns: 1fr 1fr; }
+            .article-body h2 { font-size: 1.6rem; }
+            .highlight-box, .verdict-box { padding: 20px; }
+        }
+        @media (max-width: 480px) {
+            .article-header h1 { font-size: 1.6rem; }
+            .article-meta { font-size: 0.8rem; gap: 12px; flex-direction: column; }
+            .product-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+    <!-- КНОПКА НА ГЛАВНУЮ -->
+    <a href="index.html" class="back-link">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M19 12H5M12 19l-7-7 7-7"/>
+        </svg>
+        На главную
+    </a>
+
+    <!-- СТАТЬЯ -->
+    <article class="article-body">
+
+        <div class="article-header">
+            <h1>Уход за мебелью из массива: чем мыть, как обновлять покрытие и убирать царапины</h1>
+            <div class="article-meta">
+                <span>📅 30 июня 2026</span>
+                <span>⏱ 9 минут чтения</span>
+                <span>🏷️ #уход #массивдерева #реставрация</span>
+            </div>
+        </div>
+
+        <p style="font-size: 1.15rem; font-weight: 400; color: var(--text-light);">
+            Мебель из массива — это инвестиция на десятилетия. Но, как и любая натуральная вещь, она требует внимания. Правильный уход сохранит красоту дерева, защитит от повреждений и продлит срок службы. В этой статье — полное руководство по уходу за деревянной мебелью.
+        </p>
+
+        <h2>Почему уход за массивом — это важно</h2>
+        <p>Дерево — живой материал. Оно реагирует на влажность, температуру, солнечный свет и механические воздействия. Без должного ухода поверхность тускнеет, появляются царапины, пятна и трещины. Но при правильном подходе мебель из дуба, ясеня или сосны будет радовать вас десятилетиями, сохраняя тепло и природную красоту.</p>
+
+        <div class="highlight-box">
+            <p><strong>💡 Главное правило:</strong> регулярный уход — это не сложно, главное — делать это системно. Раз в неделю — влажная уборка, раз в год — обновление покрытия.</p>
+        </div>
+
+        <h2>1. Чем мыть деревянную мебель?</h2>
+
+        <h3>Ежедневная и еженедельная уборка</h3>
+        <ul>
+            <li><strong>Сухая уборка:</strong> используйте мягкую микрофибру или фланелевую ткань для удаления пыли. Движения — по направлению волокон.</li>
+            <li><strong>Влажная уборка:</strong> слегка влажная ткань (хорошо отжатая!) удаляет загрязнения. Избегайте избыточной влаги — вода враг дерева.</li>
+            <li><strong>Что использовать:</strong> специальные средства для ухода за деревом (например, Osmo, Borma, Biofa) или мыльный раствор (нейтральное мыло + вода). Никаких агрессивных химикатов, хлорки, ацетона!</li>
+        </ul>
+
+        <div class="product-grid">
+            <div class="product-item">
+                <span class="icon">🧴</span>
+                <h5>Osmo Pflegeöl</h5>
+                <p>Масло-воск для обновления покрытия</p>
+            </div>
+            <div class="product-item">
+                <span class="icon">🧽</span>
+                <h5>Borma Wachs</h5>
+                <p>Натуральный воск для защиты</p>
+            </div>
+            <div class="product-item">
+                <span class="icon">🧪</span>
+                <h5>Biofa Reiniger</h5>
+                <p>Щадящее моющее средство</p>
+            </div>
+        </div>
+
+        <h3>Что категорически нельзя использовать:</h3>
+        <ul>
+            <li>Спирт, растворители, ацетон — разрушают защитное покрытие.</li>
+            <li>Абразивные губки и порошки — оставляют царапины.</li>
+            <li>Пар и пароочистители — пересушивают и деформируют древесину.</li>
+            <li>Обычные бытовые моющие средства с кислотами и щелочами.</li>
+        </ul>
+
+        <h2>2. Как обновлять покрытие?</h2>
+        <p>Со временем масляное или восковое покрытие стирается, особенно на часто используемых поверхностях (столешницы, подлокотники). Обновление покрытия — это восстановление защиты и возвращение блеска.</p>
+
+        <div class="step-grid">
+            <div class="step-card">
+                <div class="step-num">1</div>
+                <h4>Очистка поверхности</h4>
+                <p>Удалите пыль и загрязнения мягкой влажной тканью. Дайте дереву полностью высохнуть.</p>
+            </div>
+            <div class="step-card">
+                <div class="step-num">2</div>
+                <h4>Лёгкая шлифовка (при необходимости)</h4>
+                <p>Если покрытие сильно стёрто — пройдитесь мелкозернистой наждачной бумагой (240–320) по направлению волокон. Удалите шлифовальную пыль.</p>
+            </div>
+            <div class="step-card">
+                <div class="step-num">3</div>
+                <h4>Нанесение масла или воска</h4>
+                <p>Нанесите тонкий слой масла (Osmo, Belinka или другое) специальной кистью или тканью. Равномерно распределите по поверхности.</p>
+            </div>
+            <div class="step-card">
+                <div class="step-num">4</div>
+                <h4>Полировка и сушка</h4>
+                <p>Через 10–15 минут удалите излишки сухой тканью. Оставьте сохнуть на 12–24 часа. При необходимости нанесите второй слой.</p>
+            </div>
+        </div>
+
+        <div class="highlight-box">
+            <p><strong>📌 Рекомендация:</strong> обновляйте покрытие раз в 1–2 года. Для столешниц и поверхностей с высокой нагрузкой — раз в 6–12 месяцев. Это продлит жизнь мебели и сохранит её внешний вид.</p>
+        </div>
+
+        <h2>3. Как убрать царапины и повреждения?</h2>
+        <p>Царапины на дереве — неизбежность. Но большинство из них можно устранить самостоятельно.</p>
+
+        <h3>Мелкие поверхностные царапины</h3>
+        <ul>
+            <li><strong>Масло + шлифовка:</strong> пройдитесь по царапине мелкозернистой наждачкой (P320) вдоль волокон, затем нанесите масло. Царапина исчезнет.</li>
+            <li><strong>Восстанавливающий воск:</strong> специальный мебельный воск заполняет мелкие царапины и маскирует их. Подходит для лакированных и масляных покрытий.</li>
+            <li><strong>Грецкий орех:</strong> народный метод — потрите царапину ядром грецкого ореха. Масло ореха заполнит повреждение, и оно станет менее заметным.</li>
+        </ul>
+
+        <h3>Глубокие царапины и сколы</h3>
+        <ul>
+            <li><strong>Шпаклёвка по дереву:</strong> подберите цвет, заполните скол, после высыхания отшлифуйте и покройте маслом.</li>
+            <li><strong>Ремонтный комплект:</strong> для серьёзных повреждений лучше обратиться к профессионалам. В мастерской «Деревянная Уфа» мы восстанавливаем любую деревянную мебель.</li>
+        </ul>
+
+        <div class="verdict-box">
+            <h3>🌿 Главные секреты долговечности</h3>
+            <p><strong>Регулярность:</strong> лучше протирать дерево раз в неделю, чем раз в месяц делать генеральную уборку.</p>
+            <p><strong>Мягкие ткани:</strong> никакой синтетики с жёстким ворсом — только микрофибра, хлопок или фланель.</p>
+            <p><strong>Защита от солнца:</strong> прямые солнечные лучи выбеливают дерево. Используйте шторы или жалюзи.</p>
+            <p><strong>Влажность в помещении:</strong> поддерживайте 40–60%. При сухом воздухе используйте увлажнители, при избыточной влажности — осушители.</p>
+            <p style="margin-top: 15px;">В «Деревянной Уфе» мы используем только качественные масла и воски (Osmo, Borma). Все наши изделия проходят финишную обработку, которая защищает дерево от влаги и загрязнений. <a href="index.html#contacts" style="color: var(--accent); font-weight: 600; text-decoration: underline;">Обращайтесь</a> за консультацией по уходу и реставрации.</p>
+        </div>
+
+        <h2>4. Уход за разными породами дерева</h2>
+        <ul>
+            <li><strong>Сосна:</strong> мягкая порода, склонна к царапинам. Требует более частого обновления масляного покрытия. Используйте щадящие средства.</li>
+            <li><strong>Ясень:</strong> твёрдая, светлая древесина. Менее капризна, но тоже нуждается в защите от влаги.</li>
+            <li><strong>Дуб:</strong> самый твёрдый и долговечный. Отлично переносит механические нагрузки, но требует регулярного ухода за масляным слоем.</li>
+        </ul>
+
+        <h2>5. Как защитить деревянную столешницу на кухне?</h2>
+        <ul>
+            <li><strong>Всегда используйте разделочные доски</strong> — ножи оставляют следы даже на дубе.</li>
+            <li><strong>Не ставьте горячее напрямую</strong> — подставки под кастрюли обязательны.</li>
+            <li><strong>Сразу вытирайте пролитую жидкость</strong> — особенно вино, сок, кофе и уксус.</li>
+            <li><strong>Раз в полгода обновляйте масляное покрытие</strong> — это защитит от влаги и пятен.</li>
+        </ul>
+
+        <div class="highlight-box" style="border-left-color: var(--primary);">
+            <p><strong>🔨 Профессиональный совет:</strong> если вы сомневаетесь в своих силах или повреждения серьёзные — доверьте реставрацию специалистам. В «Деревянной Уфе» мы восстанавливаем любую деревянную мебель, возвращая ей первозданный вид.</p>
+        </div>
+
+        <h2>Частые вопросы об уходе за деревом</h2>
+
+        <div class="faq-mini">
+            <div class="faq-mini-item">
+                <h4>❓ Можно ли мыть деревянную мебель водой?</h4>
+                <p>Да, но только слегка влажной тканью. Вода не должна скапливаться на поверхности. После влажной уборки протрите сухой тканью.</p>
+            </div>
+            <div class="faq-mini-item">
+                <h4>❓ Как убрать жирное пятно с деревянной столешницы?</h4>
+                <p>Смешайте пищевую соду с небольшим количеством воды до состояния пасты, нанесите на пятно, оставьте на 5–10 минут, затем сотрите мягкой тканью. После — обновите масляное покрытие.</p>
+            </div>
+            <div class="faq-mini-item">
+                <h4>❓ Чем обработать дерево, чтобы оно не темнело?</h4>
+                <p>Используйте масла с УФ-фильтрами или специальные воски. Также защищайте мебель от прямых солнечных лучей.</p>
+            </div>
+            <div class="faq-mini-item">
+                <h4>❓ Можно ли использовать лак вместо масла?</h4>
+                <p>Лак образует плёнку на поверхности, которая со временем трескается и требует сложной реставрации. Масло проникает в поры дерева, сохраняя его структуру, и легко обновляется.</p>
+            </div>
+        </div>
+
+        <div class="highlight-box" style="border-left-color: var(--accent);">
+            <p><strong>🌟 Больше советов и рекомендаций</strong> вы найдёте в нашем блоге. Мы регулярно делимся опытом по уходу за деревянной мебелью. <a href="index.html" style="color: var(--accent); font-weight: 600;">Подписывайтесь на наши соцсети</a> и следите за обновлениями.</p>
+        </div>
+
+        <div class="btn-center">
+            <a href="index.html" class="btn">← Вернуться на главную</a>
+        </div>
+
+    </article>
+</div>
+
+</body>
+</html>
