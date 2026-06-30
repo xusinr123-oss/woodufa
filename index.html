@@ -3,7 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Деревянная Уфа | Мебель и декор из массива</title>
+    
+    <!-- Яндекс Вебмастер -->
+    <meta name="yandex-verification" content="1b646398fea9f0b6" />
+    
+    <!-- SEO Мета-теги -->
+    <title>Мебель из массива в Уфе на заказ | Деревянная Уфа</title>
+    <meta name="description" content="Изготовление мебели, столешниц, лестниц и перегородок из массива дуба, ясеня и сосны. 12 лет опыта. Индивидуальные проекты. Доставка по Уфе и России. +7-964-954-11-22">
+    <meta name="keywords" content="мебель из массива уфа, столешницы на заказ уфа, деревянные лестницы уфа, перегородки из дерева, мебель из дуба, столярная мастерская уфа">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://ваш-сайт.ru/">
+    
+    <!-- Open Graph для соцсетей -->
+    <meta property="og:title" content="Мебель из массива в Уфе на заказ | Деревянная Уфа" />
+    <meta property="og:description" content="Изготовление столешниц, лестниц и перегородок из дуба, ясеня и сосны. 12 лет опыта. Индивидуальные проекты." />
+    <meta property="og:image" content="https://ваш-сайт.ru/image/og-image.jpg" />
+    <meta property="og:url" content="https://ваш-сайт.ru/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="ru_RU" />
+    
+    <!-- Иконки сайта (Favicon) -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
     
     <!-- Подключение шрифтов -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -107,6 +130,20 @@
             background: var(--primary);
             color: var(--white);
         }
+
+        .btn-center {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        /* --- ХЛЕБНЫЕ КРОШКИ --- */
+        .breadcrumbs {
+            padding: 100px 0 20px;
+            font-size: 0.9rem;
+            color: var(--text-light);
+        }
+        .breadcrumbs a:hover { color: var(--accent); }
+        .breadcrumbs span { color: var(--text-main); }
 
         /* --- HEADER --- */
         header {
@@ -267,7 +304,7 @@
 
         .products-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            grid-template-columns: repeat(3, 1fr);
             gap: 40px;
         }
 
@@ -283,6 +320,10 @@
         .product-card:hover {
             transform: translateY(-10px);
             box-shadow: 0 20px 50px rgba(58, 77, 63, 0.15);
+        }
+
+        .product-card.hidden {
+            display: none;
         }
 
         .card-img {
@@ -401,6 +442,146 @@
             color: var(--primary);
         }
 
+        /* --- КАК МЫ РАБОТАЕМ --- */
+        .work-steps {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 30px;
+            margin-top: 50px;
+        }
+        .work-step {
+            text-align: center;
+            padding: 30px 20px;
+            background: var(--white);
+            border-radius: var(--radius-md);
+            position: relative;
+            transition: var(--transition);
+        }
+        .work-step:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow);
+        }
+        .work-step .step-number {
+            width: 60px;
+            height: 60px;
+            background: var(--primary);
+            color: var(--white);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.8rem;
+            font-weight: 700;
+            margin: 0 auto 20px;
+            font-family: var(--font-head);
+        }
+        .work-step h4 {
+            font-family: var(--font-head);
+            font-size: 1.2rem;
+            color: var(--primary);
+            margin-bottom: 10px;
+        }
+        .work-step p {
+            color: var(--text-light);
+            font-size: 0.95rem;
+        }
+
+        /* --- ОТЗЫВЫ --- */
+        .reviews-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            margin-top: 50px;
+        }
+        .review-card {
+            background: var(--white);
+            padding: 30px;
+            border-radius: var(--radius-md);
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+        }
+        .review-card:hover {
+            transform: translateY(-5px);
+        }
+        .review-header {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 15px;
+        }
+        .review-avatar {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background: var(--bg-secondary);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.8rem;
+            color: var(--primary);
+        }
+        .review-name {
+            font-weight: 600;
+            font-size: 1.1rem;
+        }
+        .review-date {
+            font-size: 0.85rem;
+            color: var(--text-light);
+        }
+        .review-text {
+            color: var(--text-light);
+            font-style: italic;
+        }
+        .review-stars {
+            color: #F4B400;
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+        }
+
+        /* --- FAQ --- */
+        .faq-grid {
+            max-width: 800px;
+            margin: 50px auto 0;
+        }
+        .faq-item {
+            background: var(--white);
+            border-radius: var(--radius-sm);
+            margin-bottom: 15px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+        }
+        .faq-question {
+            padding: 20px 25px;
+            font-weight: 600;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: var(--transition);
+        }
+        .faq-question:hover {
+            background: var(--bg-secondary);
+        }
+        .faq-question .arrow {
+            transition: var(--transition);
+            font-size: 1.2rem;
+        }
+        .faq-item.active .faq-question .arrow {
+            transform: rotate(180deg);
+        }
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.4s ease, padding 0.4s ease;
+            padding: 0 25px;
+            color: var(--text-light);
+        }
+        .faq-item.active .faq-answer {
+            max-height: 300px;
+            padding: 0 25px 25px;
+        }
+
+        /* --- STATS --- */
         .stats-section {
             background: var(--primary);
             color: var(--white);
@@ -462,10 +643,10 @@
             box-shadow: var(--shadow);
         }
 
-        /* --- CONTACTS --- */
+        /* --- CONTACTS (только информация) --- */
         .contacts-wrapper {
             display: grid;
-            grid-template-columns: 1fr 1.5fr;
+            grid-template-columns: 1fr 1fr;
             gap: 50px;
             background: var(--white);
             border-radius: var(--radius-md);
@@ -501,35 +682,48 @@
             font-weight: 500;
         }
 
-        .contact-form {
+        .contact-map {
             padding: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: var(--bg-secondary);
+            min-height: 400px;
         }
 
-        .form-group {
-            margin-bottom: 25px;
-        }
-
-        .form-group label {
-            display: block;
-            margin-bottom: 8px;
-            font-weight: 500;
-            color: var(--text-main);
-        }
-
-        .form-control {
+        .contact-map iframe {
             width: 100%;
-            padding: 15px;
-            border: 1px solid #ddd;
+            height: 450px;
+            border: 0;
             border-radius: var(--radius-sm);
-            font-family: var(--font-body);
-            font-size: 1rem;
-            transition: var(--transition);
         }
 
-        .form-control:focus {
-            outline: none;
-            border-color: var(--primary);
-            box-shadow: 0 0 0 3px rgba(58, 77, 63, 0.1);
+        /* --- ПЛАВАЮЩАЯ КНОПКА MAX --- */
+        .max-float {
+            position: fixed;
+            bottom: 30px;
+            left: 30px;
+            z-index: 1000;
+            background: #2D2D2D;
+            color: white;
+            padding: 14px 22px;
+            border-radius: 50px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-weight: 600;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+            transition: var(--transition);
+            text-decoration: none;
+        }
+        .max-float:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 30px rgba(0, 0, 0, 0.4);
+        }
+        .max-float svg {
+            width: 24px;
+            height: 24px;
+            fill: white;
         }
 
         /* --- FOOTER --- */
@@ -595,10 +789,13 @@
         @media (max-width: 992px) {
             .hero h1 { font-size: 3.5rem; }
             .features-grid { grid-template-columns: 1fr; }
+            .work-steps { grid-template-columns: repeat(2, 1fr); }
+            .reviews-grid { grid-template-columns: 1fr 1fr; }
             .stats-grid { grid-template-columns: repeat(2, 1fr); }
             .delivery-content { grid-template-columns: 1fr; }
             .contacts-wrapper { grid-template-columns: 1fr; }
             .footer-grid { grid-template-columns: 1fr 1fr; }
+            .products-grid { grid-template-columns: repeat(2, 1fr); }
         }
 
         @media (max-width: 768px) {
@@ -620,8 +817,15 @@
             .header-btn { display: none; }
             .hero h1 { font-size: 2.5rem; }
             .hero-buttons { flex-direction: column; }
+            .work-steps { grid-template-columns: 1fr; }
+            .reviews-grid { grid-template-columns: 1fr; }
             .stats-grid { grid-template-columns: 1fr; }
             .footer-grid { grid-template-columns: 1fr; }
+            .products-grid { grid-template-columns: 1fr; }
+            .max-float span { display: none; }
+            .max-float { padding: 14px; }
+            .contact-map { padding: 20px; }
+            .contact-map iframe { height: 300px; }
         }
     </style>
 </head>
@@ -644,6 +848,7 @@
             <a href="#contacts" class="btn btn-primary header-btn">Связаться</a>
         </div>
     </header>
+
 
     <!-- Главный экран -->
     <section class="hero" id="home">
@@ -687,7 +892,7 @@
     <section class="section-padding" id="catalog">
         <div class="container">
             <div class="section-title reveal">
-                <h2>Наши изделия</h2>
+                <h2>Каталог деревянных столешниц, лестниц и перегородок</h2>
                 <p>За 12 лет работы в Уфе мы выполнили сотни проектов для частных клиентов и компаний. Каждое изделие создано вручную из массива дуба, ясеня и сосны.</p>
             </div>
 
@@ -701,400 +906,429 @@
                 <button class="filter-btn" data-filter="stairs">Лестницы</button>
             </div>
 
-            <div class="products-grid">
+            <div class="products-grid" id="productsGrid">
                 <!-- Товар 1 - Столешница для кухни -->
-                <div class="product-card reveal" data-category="kitchen-countertop">
+                <article class="product-card reveal" data-category="kitchen-countertop" itemscope itemtype="https://schema.org/Product">
                     <div class="card-img">
                         <span class="card-badge">Хит продаж</span>
-                        <img src="image/stol.jpg" alt="Столешница для кухни 1">
+                        <img src="image/stol.jpg" alt="Столешница из дуба для кухни в Уфе" loading="lazy" itemprop="image">
                     </div>
                     <div class="card-body">
-                        <span class="card-cat">Столешницы для кухни</span>
-                        <h3 class="card-title">Столешница из дуба</h3>
-                        <p style="color: #777; font-size: 0.9rem;">Массив дуба, масло Osmo, толщина 40мм.</p>
-                        <div class="card-price">
-                            от 30 000 ₽
+                        <span class="card-cat" itemprop="category">Столешницы для кухни</span>
+                        <h3 class="card-title" itemprop="name">Столешница из дуба</h3>
+                        <p style="color: #777; font-size: 0.9rem;" itemprop="description">Массив дуба, масло Osmo, толщина 40мм.</p>
+                        <div class="card-price" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                            <span itemprop="priceCurrency" content="RUB">₽</span>
+                            <span itemprop="price" content="30000">от 30 000</span>
                             <button class="add-to-cart" title="Заказать">→</button>
                         </div>
                     </div>
-                </div>
+                </article>
 
                 <!-- Товар 2 - Столешница для кухни -->
-                <div class="product-card reveal" data-category="kitchen-countertop">
+                <article class="product-card reveal" data-category="kitchen-countertop" itemscope itemtype="https://schema.org/Product">
                     <div class="card-img">
-                        <img src="image/stol1.jpg" alt="Столешница для кухни 2">
+                        <img src="image/stol1.jpg" alt="Столешница из ясеня для кухни" loading="lazy" itemprop="image">
                     </div>
                     <div class="card-body">
-                        <span class="card-cat">Столешницы для кухни</span>
-                        <h3 class="card-title">Столешница из ясеня</h3>
-                        <p style="color: #777; font-size: 0.9rem;">Ясень натуральный, покрытие маслом. Толщина 40мм</p>
-                        <div class="card-price">
-                            от 20 000 ₽
+                        <span class="card-cat" itemprop="category">Столешницы для кухни</span>
+                        <h3 class="card-title" itemprop="name">Столешница из ясеня</h3>
+                        <p style="color: #777; font-size: 0.9rem;" itemprop="description">Ясень натуральный, покрытие маслом. Толщина 40мм</p>
+                        <div class="card-price" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                            <span itemprop="priceCurrency" content="RUB">₽</span>
+                            <span itemprop="price" content="20000">от 20 000</span>
                             <button class="add-to-cart" title="Заказать">→</button>
                         </div>
                     </div>
-                </div>
+                </article>
 
                 <!-- Товар 3 - Столешница для кухни -->
-                <div class="product-card reveal" data-category="kitchen-countertop">
+                <article class="product-card reveal" data-category="kitchen-countertop" itemscope itemtype="https://schema.org/Product">
                     <div class="card-img">
-                        <img src="image/stol2.jpg" alt="Столешница для кухни 3">
+                        <img src="image/stol2.jpg" alt="Столешница из сосны для кухни" loading="lazy" itemprop="image">
                     </div>
                     <div class="card-body">
-                        <span class="card-cat">Столешницы для кухни</span>
-                        <h3 class="card-title">Столешница из сосны</h3>
-                        <p style="color: #777; font-size: 0.9rem;">Сосна, коллерованный лак, 40мм</p>
-                        <div class="card-price">
-                            от 8 000 ₽
+                        <span class="card-cat" itemprop="category">Столешницы для кухни</span>
+                        <h3 class="card-title" itemprop="name">Столешница из сосны</h3>
+                        <p style="color: #777; font-size: 0.9rem;" itemprop="description">Сосна, коллерованный лак, 40мм</p>
+                        <div class="card-price" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                            <span itemprop="priceCurrency" content="RUB">₽</span>
+                            <span itemprop="price" content="8000">от 8 000</span>
                             <button class="add-to-cart" title="Заказать">→</button>
                         </div>
                     </div>
-                </div>
+                </article>
 
                 <!-- Товар 4 - Столешница для кухни -->
-                <div class="product-card reveal" data-category="kitchen-countertop">
+                <article class="product-card reveal" data-category="kitchen-countertop" itemscope itemtype="https://schema.org/Product">
                     <div class="card-img">
                         <span class="card-badge">New</span>
-                        <img src="image/stol3.jpg" alt="Столешница для кухни 4">
+                        <img src="image/stol3.jpg" alt="Барная стойка из ясеня" loading="lazy" itemprop="image">
                     </div>
                     <div class="card-body">
-                        <span class="card-cat">Столешницы для кухни</span>
-                        <h3 class="card-title">Барная стойка из ясеня</h3>
-                        <p style="color: #777; font-size: 0.9rem;">Цельный слэб ясеня, кромка живая.</p>
-                        <div class="card-price">
-                            от 15 000 ₽
+                        <span class="card-cat" itemprop="category">Столешницы для кухни</span>
+                        <h3 class="card-title" itemprop="name">Барная стойка из ясеня</h3>
+                        <p style="color: #777; font-size: 0.9rem;" itemprop="description">Цельный слэб ясеня, кромка живая.</p>
+                        <div class="card-price" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                            <span itemprop="priceCurrency" content="RUB">₽</span>
+                            <span itemprop="price" content="15000">от 15 000</span>
                             <button class="add-to-cart" title="Заказать">→</button>
                         </div>
                     </div>
-                </div>
+                </article>
 
                 <!-- Товар 5 - Столешница для ванны -->
-                <div class="product-card reveal" data-category="bathroom-countertop">
+                <article class="product-card reveal" data-category="bathroom-countertop" itemscope itemtype="https://schema.org/Product">
                     <div class="card-img">
-                        <img src="image/van.jpg" alt="Столешница для ванны 1">
+                        <img src="image/van.jpg" alt="Тумба под раковину из дуба для ванной" loading="lazy" itemprop="image">
                     </div>
                     <div class="card-body">
-                        <span class="card-cat">Столешницы для ванны</span>
-                        <h3 class="card-title">Тумба под раковину</h3>
-                        <p style="color: #777; font-size: 0.9rem;">Дуб с влагозащитным покрытием, вырез под раковину.</p>
-                        <div class="card-price">
-                            от 15 000 ₽
+                        <span class="card-cat" itemprop="category">Столешницы для ванны</span>
+                        <h3 class="card-title" itemprop="name">Тумба под раковину</h3>
+                        <p style="color: #777; font-size: 0.9rem;" itemprop="description">Дуб с влагозащитным покрытием, вырез под раковину.</p>
+                        <div class="card-price" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                            <span itemprop="priceCurrency" content="RUB">₽</span>
+                            <span itemprop="price" content="15000">от 15 000</span>
                             <button class="add-to-cart" title="Заказать">→</button>
                         </div>
                     </div>
-                </div>
+                </article>
 
                 <!-- Товар 6 - Столешница для ванны -->
-                <div class="product-card reveal" data-category="bathroom-countertop">
+                <article class="product-card reveal" data-category="bathroom-countertop" itemscope itemtype="https://schema.org/Product">
                     <div class="card-img">
                         <span class="card-badge">Популярное</span>
-                        <img src="image/van1.jpg" alt="Столешница для ванны 2">
+                        <img src="image/van1.jpg" alt="Столешница для ванной на всю стену из ясеня" loading="lazy" itemprop="image">
                     </div>
                     <div class="card-body">
-                        <span class="card-cat">Столешницы для ванны</span>
-                        <h3 class="card-title">Столешница на всю стену</h3>
-                        <p style="color: #777; font-size: 0.9rem;">Ясень, лаковое покрытие.</p>
-                        <div class="card-price">
-                            от 7 000 ₽
+                        <span class="card-cat" itemprop="category">Столешницы для ванны</span>
+                        <h3 class="card-title" itemprop="name">Столешница на всю стену</h3>
+                        <p style="color: #777; font-size: 0.9rem;" itemprop="description">Ясень, лаковое покрытие.</p>
+                        <div class="card-price" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                            <span itemprop="priceCurrency" content="RUB">₽</span>
+                            <span itemprop="price" content="7000">от 7 000</span>
                             <button class="add-to-cart" title="Заказать">→</button>
                         </div>
                     </div>
-                </div>
+                </article>
 
                 <!-- Товар 7 - Столешница для ванны -->
-                <div class="product-card reveal" data-category="bathroom-countertop">
+                <article class="product-card reveal" data-category="bathroom-countertop" itemscope itemtype="https://schema.org/Product">
                     <div class="card-img">
-                        <img src="image/van2.jpg" alt="Столешница для ванны 3">
+                        <img src="image/van2.jpg" alt="Компактная тумба под раковину для маленькой ванной" loading="lazy" itemprop="image">
                     </div>
                     <div class="card-body">
-                        <span class="card-cat">Столешницы для ванны</span>
-                        <h3 class="card-title">Тумба под раковину</h3>
-                        <p style="color: #777; font-size: 0.9rem;">Компактное решение для маленькой ванной.</p>
-                        <div class="card-price">
-                            от 5 000 ₽
+                        <span class="card-cat" itemprop="category">Столешницы для ванны</span>
+                        <h3 class="card-title" itemprop="name">Тумба под раковину</h3>
+                        <p style="color: #777; font-size: 0.9rem;" itemprop="description">Компактное решение для маленькой ванной.</p>
+                        <div class="card-price" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                            <span itemprop="priceCurrency" content="RUB">₽</span>
+                            <span itemprop="price" content="5000">от 5 000</span>
                             <button class="add-to-cart" title="Заказать">→</button>
                         </div>
                     </div>
-                </div>
+                </article>
 
                 <!-- Товар 8 - Столешница для ванны -->
-                <div class="product-card reveal" data-category="bathroom-countertop">
+                <article class="product-card reveal" data-category="bathroom-countertop" itemscope itemtype="https://schema.org/Product">
                     <div class="card-img">
-                        <img src="image/van3.jpg" alt="Столешница для ванны 4">
+                        <img src="image/van3.jpg" alt="Парящая столешница с скрытым крепежом" loading="lazy" itemprop="image">
                     </div>
                     <div class="card-body">
-                        <span class="card-cat">Столешницы для ванны</span>
-                        <h3 class="card-title">Парящая столешница</h3>
-                        <p style="color: #777; font-size: 0.9rem;">Скрытый крепеж, эффект невесомости.</p>
-                        <div class="card-price">
-                            от 10 000 ₽
+                        <span class="card-cat" itemprop="category">Столешницы для ванны</span>
+                        <h3 class="card-title" itemprop="name">Парящая столешница</h3>
+                        <p style="color: #777; font-size: 0.9rem;" itemprop="description">Скрытый крепеж, эффект невесомости.</p>
+                        <div class="card-price" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                            <span itemprop="priceCurrency" content="RUB">₽</span>
+                            <span itemprop="price" content="10000">от 10 000</span>
                             <button class="add-to-cart" title="Заказать">→</button>
                         </div>
                     </div>
-                </div>
+                </article>
 
                 <!-- Товар 9 - Перегородка -->
-                <div class="product-card reveal" data-category="partitions">
+                <article class="product-card reveal" data-category="partitions" itemscope itemtype="https://schema.org/Product">
                     <div class="card-img">
                         <span class="card-badge">Хит</span>
-                        <img src="image/per.jpg" alt="Перегородка 1">
+                        <img src="image/per.jpg" alt="Деревянная перегородка из рейки для зонирования" loading="lazy" itemprop="image">
                     </div>
                     <div class="card-body">
-                        <span class="card-cat">Перегородки</span>
-                        <h3 class="card-title">Перегородка из рейки</h3>
-                        <p style="color: #777; font-size: 0.9rem;">Деревянная рейка, зонирование пространства. Размер 2500х1000х60</p>
-                        <div class="card-price">
-                            от 15 000 ₽
+                        <span class="card-cat" itemprop="category">Перегородки</span>
+                        <h3 class="card-title" itemprop="name">Перегородка из рейки</h3>
+                        <p style="color: #777; font-size: 0.9rem;" itemprop="description">Деревянная рейка, зонирование пространства. Размер 2500х1000х60</p>
+                        <div class="card-price" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                            <span itemprop="priceCurrency" content="RUB">₽</span>
+                            <span itemprop="price" content="15000">от 15 000</span>
                             <button class="add-to-cart" title="Заказать">→</button>
                         </div>
                     </div>
-                </div>
+                </article>
 
                 <!-- Товар 10 - Перегородка -->
-                <div class="product-card reveal" data-category="partitions">
+                <article class="product-card reveal" data-category="partitions" itemscope itemtype="https://schema.org/Product">
                     <div class="card-img">
-                        <img src="image/per1.jpg" alt="Перегородка 2">
+                        <img src="image/per1.jpg" alt="Декоративная перегородка из сосны" loading="lazy" itemprop="image">
                     </div>
                     <div class="card-body">
-                        <span class="card-cat">Перегородки</span>
-                        <h3 class="card-title">Декоративная перегородка</h3>
-                        <p style="color: #777; font-size: 0.9rem;">Рейки из сосны.</p>
-                        <div class="card-price">
-                            от 8 000 ₽
+                        <span class="card-cat" itemprop="category">Перегородки</span>
+                        <h3 class="card-title" itemprop="name">Декоративная перегородка</h3>
+                        <p style="color: #777; font-size: 0.9rem;" itemprop="description">Рейки из сосны.</p>
+                        <div class="card-price" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                            <span itemprop="priceCurrency" content="RUB">₽</span>
+                            <span itemprop="price" content="8000">от 8 000</span>
                             <button class="add-to-cart" title="Заказать">→</button>
                         </div>
                     </div>
-                </div>
+                </article>
 
                 <!-- Товар 11 - Перегородка -->
-                <div class="product-card reveal" data-category="partitions">
+                <article class="product-card reveal" data-category="partitions" itemscope itemtype="https://schema.org/Product">
                     <div class="card-img">
-                        <img src="image/per2.jpg" alt="Перегородка 3">
+                        <img src="image/per2.jpg" alt="Декоративная перегородка из ясеня" loading="lazy" itemprop="image">
                     </div>
                     <div class="card-body">
-                        <span class="card-cat">Перегородки</span>
-                        <h3 class="card-title">Декоративная перегородка</h3>
-                        <p style="color: #777; font-size: 0.9rem;">Рейки из ясеня.</p>
-                        <div class="card-price">
-                            от 12 000 ₽
+                        <span class="card-cat" itemprop="category">Перегородки</span>
+                        <h3 class="card-title" itemprop="name">Декоративная перегородка</h3>
+                        <p style="color: #777; font-size: 0.9rem;" itemprop="description">Рейки из ясеня.</p>
+                        <div class="card-price" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                            <span itemprop="priceCurrency" content="RUB">₽</span>
+                            <span itemprop="price" content="12000">от 12 000</span>
                             <button class="add-to-cart" title="Заказать">→</button>
                         </div>
                     </div>
-                </div>
+                </article>
 
                 <!-- Товар 12 - Перегородка -->
-                <div class="product-card reveal" data-category="partitions">
+                <article class="product-card reveal" data-category="partitions" itemscope itemtype="https://schema.org/Product">
                     <div class="card-img">
                         <span class="card-badge">New</span>
-                        <img src="image/per3.jpg" alt="Перегородка 4">
+                        <img src="image/per3.jpg" alt="Декоративная перегородка из дуба" loading="lazy" itemprop="image">
                     </div>
                     <div class="card-body">
-                        <span class="card-cat">Перегородки</span>
-                        <h3 class="card-title">Декоративная перегородка</h3>
-                        <p style="color: #777; font-size: 0.9rem;">Рейки из дуба.</p>
-                        <div class="card-price">
-                            от 15 000 ₽
+                        <span class="card-cat" itemprop="category">Перегородки</span>
+                        <h3 class="card-title" itemprop="name">Декоративная перегородка</h3>
+                        <p style="color: #777; font-size: 0.9rem;" itemprop="description">Рейки из дуба.</p>
+                        <div class="card-price" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                            <span itemprop="priceCurrency" content="RUB">₽</span>
+                            <span itemprop="price" content="15000">от 15 000</span>
                             <button class="add-to-cart" title="Заказать">→</button>
                         </div>
                     </div>
-                </div>
+                </article>
 
                 <!-- Товар 13 - Стул -->
-                <div class="product-card reveal" data-category="chairs">
+                <article class="product-card reveal" data-category="chairs" itemscope itemtype="https://schema.org/Product">
                     <div class="card-img">
-                        <img src="image/stul.jpg" alt="Стул 1">
+                        <img src="image/stul.jpg" alt="Стул Wishbone из дуба с плетеным сиденьем" loading="lazy" itemprop="image">
                     </div>
                     <div class="card-body">
-                        <span class="card-cat">Стулья</span>
-                        <h3 class="card-title">Стул "Wishbone"</h3>
-                        <p style="color: #777; font-size: 0.9rem;">Натуральный дуб, плетеное сиденье.</p>
-                        <div class="card-price">
-                            4 500 ₽
+                        <span class="card-cat" itemprop="category">Стулья</span>
+                        <h3 class="card-title" itemprop="name">Стул "Wishbone"</h3>
+                        <p style="color: #777; font-size: 0.9rem;" itemprop="description">Натуральный дуб, плетеное сиденье.</p>
+                        <div class="card-price" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                            <span itemprop="priceCurrency" content="RUB">₽</span>
+                            <span itemprop="price" content="4500">4 500</span>
                             <button class="add-to-cart" title="Заказать">→</button>
                         </div>
                     </div>
-                </div>
+                </article>
 
                 <!-- Товар 14 - Стул -->
-                <div class="product-card reveal" data-category="chairs">
+                <article class="product-card reveal" data-category="chairs" itemscope itemtype="https://schema.org/Product">
                     <div class="card-img">
                         <span class="card-badge">Популярное</span>
-                        <img src="image/stul1.jpg" alt="Стул 2">
+                        <img src="image/stul1.jpg" alt="Стул по индивидуальному дизайну" loading="lazy" itemprop="image">
                     </div>
                     <div class="card-body">
-                        <span class="card-cat">Стулья</span>
-                        <h3 class="card-title">Стул под ваш дизаин</h3>
-                        <p style="color: #777; font-size: 0.9rem;">Любые виды и дизайны стульев.</p>
-                        <div class="card-price">
-                            5 900 ₽
+                        <span class="card-cat" itemprop="category">Стулья</span>
+                        <h3 class="card-title" itemprop="name">Стул под ваш дизайн</h3>
+                        <p style="color: #777; font-size: 0.9rem;" itemprop="description">Любые виды и дизайны стульев.</p>
+                        <div class="card-price" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                            <span itemprop="priceCurrency" content="RUB">₽</span>
+                            <span itemprop="price" content="5900">5 900</span>
                             <button class="add-to-cart" title="Заказать">→</button>
                         </div>
                     </div>
-                </div>
+                </article>
 
                 <!-- Товар 15 - Стул -->
-                <div class="product-card reveal" data-category="chairs">
+                <article class="product-card reveal" data-category="chairs" itemscope itemtype="https://schema.org/Product">
                     <div class="card-img">
-                        <img src="image/stul2.jpg" alt="Стул 3">
+                        <img src="image/stul2.jpg" alt="Скандинавский стул из сосны" loading="lazy" itemprop="image">
                     </div>
                     <div class="card-body">
-                        <span class="card-cat">Стулья</span>
-                        <h3 class="card-title">Стул скандинавский</h3>
-                        <p style="color: #777; font-size: 0.9rem;">Минимализм, сосна беленая.</p>
-                        <div class="card-price">
-                            9 500 ₽
+                        <span class="card-cat" itemprop="category">Стулья</span>
+                        <h3 class="card-title" itemprop="name">Стул скандинавский</h3>
+                        <p style="color: #777; font-size: 0.9rem;" itemprop="description">Минимализм, сосна беленая.</p>
+                        <div class="card-price" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                            <span itemprop="priceCurrency" content="RUB">₽</span>
+                            <span itemprop="price" content="9500">9 500</span>
                             <button class="add-to-cart" title="Заказать">→</button>
                         </div>
                     </div>
-                </div>
+                </article>
 
                 <!-- Товар 16 - Стул -->
-                <div class="product-card reveal" data-category="chairs">
+                <article class="product-card reveal" data-category="chairs" itemscope itemtype="https://schema.org/Product">
                     <div class="card-img">
-                        <img src="image/stul3.jpg" alt="Стул 4">
+                        <img src="image/stul3.jpg" alt="Барный стул из дуба" loading="lazy" itemprop="image">
                     </div>
                     <div class="card-body">
-                        <span class="card-cat">Стулья</span>
-                        <h3 class="card-title">Стул барный высокий</h3>
-                        <p style="color: #777; font-size: 0.9rem;">Для барной стойки, дуб.</p>
-                        <div class="card-price">
-                            6 000 ₽
+                        <span class="card-cat" itemprop="category">Стулья</span>
+                        <h3 class="card-title" itemprop="name">Стул барный высокий</h3>
+                        <p style="color: #777; font-size: 0.9rem;" itemprop="description">Для барной стойки, дуб.</p>
+                        <div class="card-price" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                            <span itemprop="priceCurrency" content="RUB">₽</span>
+                            <span itemprop="price" content="6000">6 000</span>
                             <button class="add-to-cart" title="Заказать">→</button>
                         </div>
                     </div>
-                </div>
+                </article>
 
                 <!-- Товар 17 - Стол -->
-                <div class="product-card reveal" data-category="tables">
+                <article class="product-card reveal" data-category="tables" itemscope itemtype="https://schema.org/Product">
                     <div class="card-img">
                         <span class="card-badge">Хит</span>
-                        <img src="image/stoll.jpg" alt="Стол 1">
+                        <img src="image/stoll.jpg" alt="Классический стол из сосны с металлическими ножками" loading="lazy" itemprop="image">
                     </div>
                     <div class="card-body">
-                        <span class="card-cat">Столы</span>
-                        <h3 class="card-title">Классический стол из сосны</h3>
-                        <p style="color: #777; font-size: 0.9rem;">Сосна, Масло, Металл.</p>
-                        <div class="card-price">
-                            от 15 000 ₽
+                        <span class="card-cat" itemprop="category">Столы</span>
+                        <h3 class="card-title" itemprop="name">Классический стол из сосны</h3>
+                        <p style="color: #777; font-size: 0.9rem;" itemprop="description">Сосна, Масло, Металл.</p>
+                        <div class="card-price" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                            <span itemprop="priceCurrency" content="RUB">₽</span>
+                            <span itemprop="price" content="15000">от 15 000</span>
                             <button class="add-to-cart" title="Заказать">→</button>
                         </div>
                     </div>
-                </div>
+                </article>
 
                 <!-- Товар 18 - Стол -->
-                <div class="product-card reveal" data-category="tables">
+                <article class="product-card reveal" data-category="tables" itemscope itemtype="https://schema.org/Product">
                     <div class="card-img">
-                        <img src="image/stoll1.jpg" alt="Стол 2">
+                        <img src="image/stoll1.jpg" alt="Минималистичный стол из массива ясеня" loading="lazy" itemprop="image">
                     </div>
                     <div class="card-body">
-                        <span class="card-cat">Столы</span>
-                        <h3 class="card-title">Стол из ясеня</h3>
-                        <p style="color: #777; font-size: 0.9rem;">Минимализм, массив ясеня.</p>
-                        <div class="card-price">
-                            18 000 ₽
+                        <span class="card-cat" itemprop="category">Столы</span>
+                        <h3 class="card-title" itemprop="name">Стол из ясеня</h3>
+                        <p style="color: #777; font-size: 0.9rem;" itemprop="description">Минимализм, массив ясеня.</p>
+                        <div class="card-price" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                            <span itemprop="priceCurrency" content="RUB">₽</span>
+                            <span itemprop="price" content="18000">18 000</span>
                             <button class="add-to-cart" title="Заказать">→</button>
                         </div>
                     </div>
-                </div>
+                </article>
 
                 <!-- Товар 19 - Стол -->
-                <div class="product-card reveal" data-category="tables">
+                <article class="product-card reveal" data-category="tables" itemscope itemtype="https://schema.org/Product">
                     <div class="card-img">
-                        <img src="image/stoll2.jpg" alt="Стол 3">
+                        <img src="image/stoll2.jpg" alt="Письменный стол из сосны" loading="lazy" itemprop="image">
                     </div>
                     <div class="card-body">
-                        <span class="card-cat">Столы</span>
-                        <h3 class="card-title">Стол рабочий</h3>
-                        <p style="color: #777; font-size: 0.9rem;">Письменный стол, сосна.</p>
-                        <div class="card-price">
-                            от 15 000 ₽
+                        <span class="card-cat" itemprop="category">Столы</span>
+                        <h3 class="card-title" itemprop="name">Стол рабочий</h3>
+                        <p style="color: #777; font-size: 0.9rem;" itemprop="description">Письменный стол, сосна.</p>
+                        <div class="card-price" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                            <span itemprop="priceCurrency" content="RUB">₽</span>
+                            <span itemprop="price" content="15000">от 15 000</span>
                             <button class="add-to-cart" title="Заказать">→</button>
                         </div>
                     </div>
-                </div>
+                </article>
 
                 <!-- Товар 20 - Стол -->
-                <div class="product-card reveal" data-category="tables">
+                <article class="product-card reveal" data-category="tables" itemscope itemtype="https://schema.org/Product">
                     <div class="card-img">
                         <span class="card-badge">New</span>
-                        <img src="image/stoll3.jpg" alt="Стол 4">
+                        <img src="image/stoll3.jpg" alt="Уличный стол из сосны с влагостойкой обработкой" loading="lazy" itemprop="image">
                     </div>
                     <div class="card-body">
-                        <span class="card-cat">Столы</span>
-                        <h3 class="card-title">Стол уличный</h3>
-                        <p style="color: #777; font-size: 0.9rem;">Сосна, уличная обработка, металл</p>
-                        <div class="card-price">
-                            от 15 000 ₽
+                        <span class="card-cat" itemprop="category">Столы</span>
+                        <h3 class="card-title" itemprop="name">Стол уличный</h3>
+                        <p style="color: #777; font-size: 0.9rem;" itemprop="description">Сосна, уличная обработка, металл</p>
+                        <div class="card-price" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                            <span itemprop="priceCurrency" content="RUB">₽</span>
+                            <span itemprop="price" content="15000">от 15 000</span>
                             <button class="add-to-cart" title="Заказать">→</button>
                         </div>
                     </div>
-                </div>
+                </article>
 
                 <!-- Товар 21 - Лестница -->
-                <div class="product-card reveal" data-category="stairs">
+                <article class="product-card reveal" data-category="stairs" itemscope itemtype="https://schema.org/Product">
                     <div class="card-img">
                         <span class="card-badge">Под заказ</span>
-                        <img src="image/lets.jpg" alt="Лестница 1">
+                        <img src="image/lets.jpg" alt="Лестница на второй этаж из массива дуба" loading="lazy" itemprop="image">
                     </div>
                     <div class="card-body">
-                        <span class="card-cat">Лестницы</span>
-                        <h3 class="card-title">Лестница на второй этаж</h3>
-                        <p style="color: #777; font-size: 0.9rem;">Массив дуба, индивидуальные размеры.</p>
-                        <div class="card-price">
-                            от 100 000 ₽
+                        <span class="card-cat" itemprop="category">Лестницы</span>
+                        <h3 class="card-title" itemprop="name">Лестница на второй этаж</h3>
+                        <p style="color: #777; font-size: 0.9rem;" itemprop="description">Массив дуба, индивидуальные размеры.</p>
+                        <div class="card-price" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                            <span itemprop="priceCurrency" content="RUB">₽</span>
+                            <span itemprop="price" content="100000">от 100 000</span>
                             <button class="add-to-cart" title="Расчет">→</button>
                         </div>
                     </div>
-                </div>
+                </article>
 
                 <!-- Товар 22 - Лестница -->
-                <div class="product-card reveal" data-category="stairs">
+                <article class="product-card reveal" data-category="stairs" itemscope itemtype="https://schema.org/Product">
                     <div class="card-img">
-                        <img src="image/lets1.jpg" alt="Лестница 2">
+                        <img src="image/lets1.jpg" alt="Угловая лестница из ясеня для небольших помещений" loading="lazy" itemprop="image">
                     </div>
                     <div class="card-body">
-                        <span class="card-cat">Лестницы</span>
-                        <h3 class="card-title">Угловая лестница</h3>
-                        <p style="color: #777; font-size: 0.9rem;">Компактное решение, ясень, балясины.</p>
-                        <div class="card-price">
-                            от 150 000 ₽
+                        <span class="card-cat" itemprop="category">Лестницы</span>
+                        <h3 class="card-title" itemprop="name">Угловая лестница</h3>
+                        <p style="color: #777; font-size: 0.9rem;" itemprop="description">Компактное решение, ясень, балясины.</p>
+                        <div class="card-price" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                            <span itemprop="priceCurrency" content="RUB">₽</span>
+                            <span itemprop="price" content="150000">от 150 000</span>
                             <button class="add-to-cart" title="Расчет">→</button>
                         </div>
                     </div>
-                </div>
+                </article>
 
                 <!-- Товар 23 - Лестница -->
-                <div class="product-card reveal" data-category="stairs">
+                <article class="product-card reveal" data-category="stairs" itemscope itemtype="https://schema.org/Product">
                     <div class="card-img">
-                        <img src="image/lets2.jpg" alt="Лестница 3">
+                        <img src="image/lets2.jpg" alt="У-образная лестница из дуба с металлическими поручнями" loading="lazy" itemprop="image">
                     </div>
                     <div class="card-body">
-                        <span class="card-cat">Лестницы</span>
-                        <h3 class="card-title">Лестница с поворотом</h3>
-                        <p style="color: #777; font-size: 0.9rem;">У-образная, дуб, поручни из металлаЫ.</p>
-                        <div class="card-price">
-                            от 220 000 ₽
+                        <span class="card-cat" itemprop="category">Лестницы</span>
+                        <h3 class="card-title" itemprop="name">Лестница с поворотом</h3>
+                        <p style="color: #777; font-size: 0.9rem;" itemprop="description">У-образная, дуб, поручни из металла.</p>
+                        <div class="card-price" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                            <span itemprop="priceCurrency" content="RUB">₽</span>
+                            <span itemprop="price" content="220000">от 220 000</span>
                             <button class="add-to-cart" title="Расчет">→</button>
                         </div>
                     </div>
-                </div>
+                </article>
 
                 <!-- Товар 24 - Лестница -->
-                <div class="product-card reveal" data-category="stairs">
+                <article class="product-card reveal" data-category="stairs" itemscope itemtype="https://schema.org/Product">
                     <div class="card-img">
                         <span class="card-badge">Премиум</span>
-                        <img src="image/lets3.jpg" alt="Лестница 4">
+                        <img src="image/lets3.jpg" alt="Трехэтажная лестница из сосны с подсветкой" loading="lazy" itemprop="image">
                     </div>
                     <div class="card-body">
-                        <span class="card-cat">Лестницы</span>
-                        <h3 class="card-title">Трехэтажная лестница</h3>
-                        <p style="color: #777; font-size: 0.9rem;">Сосна, подсветка, балясины.</p>
-                        <div class="card-price">
-                            от 250 000 ₽
+                        <span class="card-cat" itemprop="category">Лестницы</span>
+                        <h3 class="card-title" itemprop="name">Трехэтажная лестница</h3>
+                        <p style="color: #777; font-size: 0.9rem;" itemprop="description">Сосна, подсветка, балясины.</p>
+                        <div class="card-price" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                            <span itemprop="priceCurrency" content="RUB">₽</span>
+                            <span itemprop="price" content="250000">от 250 000</span>
                             <button class="add-to-cart" title="Расчет">→</button>
                         </div>
                     </div>
-                </div>
+                </article>
+            </div>
+
+            <!-- Кнопка Показать больше -->
+            <div class="btn-center reveal" id="showMoreContainer">
+                <button class="btn btn-primary" id="showMoreBtn">Показать больше</button>
             </div>
         </div>
     </section>
@@ -1142,6 +1376,131 @@
         </div>
     </section>
 
+    <!-- Как мы работаем -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="section-title reveal">
+                <h2>Как мы работаем</h2>
+                <p>Прозрачный процесс создания вашей мебели — от идеи до установки</p>
+            </div>
+            <div class="work-steps">
+                <div class="work-step reveal">
+                    <div class="step-number">1</div>
+                    <h4>Заявка и консультация</h4>
+                    <p>Вы оставляете заявку, мы обсуждаем ваш проект, материалы и сроки. Выезд на замер бесплатный. Далее мы будем списываться в удобном для Вас месте.</p>
+                </div>
+                <div class="work-step reveal">
+                    <div class="step-number">2</div>
+                    <h4>Дизайн и расчет</h4>
+                    <p>Разрабатываем 3D-модель, подбираем породу дерева и финишное покрытие. Согласовываем стоимость.</p>
+                </div>
+                <div class="work-step reveal">
+                    <div class="step-number">3</div>
+                    <h4>Изготовление</h4>
+                    <p>В течение 3-14 дней наши мастера создают ваше изделие в зависимости от сложности. Вы получаете фотоотчет процесса.</p>
+                </div>
+                <div class="work-step reveal">
+                    <div class="step-number">4</div>
+                    <h4>Доставка и установка</h4>
+                    <p>Бережно доставляем и монтируем мебель на месте. Даем гарантию 12 месяцев на все изделия.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Отзывы -->
+    <section class="section-padding about-section">
+        <div class="container">
+            <div class="section-title reveal">
+                <h2>Отзывы наших клиентов</h2>
+                <p>Более 320 довольных семей в Уфе уже выбрали нас</p>
+            </div>
+            <div class="reviews-grid">
+                <div class="review-card reveal">
+                    <div class="review-header">
+                        <div class="review-avatar">👨</div>
+                        <div>
+                            <div class="review-name">Алексей Смирнов</div>
+                            <div class="review-date">10 июня 2026</div>
+                        </div>
+                    </div>
+                    <div class="review-stars">★★★★★</div>
+                    <p class="review-text">"Заказывал столешницу из дуба для кухни. Всё сделали быстро и качественно. Мастер приехал на замер, учел все мои пожелания. Рекомендую!"</p>
+                </div>
+                <div class="review-card reveal">
+                    <div class="review-header">
+                        <div class="review-avatar">👩</div>
+                        <div>
+                            <div class="review-name">Елена Воронцова</div>
+                            <div class="review-date">28 мая 2026</div>
+                        </div>
+                    </div>
+                    <div class="review-stars">★★★★★</div>
+                    <p class="review-text">"Делали перегородку для зонирования студии. Получилось очень стильно, как на визуализации. Мастерская с душой подходит к работе!"</p>
+                </div>
+                <div class="review-card reveal">
+                    <div class="review-header">
+                        <div class="review-avatar">👨</div>
+                        <div>
+                            <div class="review-name">Дмитрий Федоров</div>
+                            <div class="review-date">15 мая 2026</div>
+                        </div>
+                    </div>
+                    <div class="review-stars">★★★★★</div>
+                    <p class="review-text">"Всем рекомендую! Сделали лестницу на второй этаж. Прекрасное качество, все подогнали идеально. Спасибо команде!"</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="section-title reveal">
+                <h2>Часто задаваемые вопросы</h2>
+                <p>Ответы на самые популярные вопросы о нашей работе</p>
+            </div>
+            <div class="faq-grid reveal">
+                <div class="faq-item active">
+                    <div class="faq-question">
+                        Какие породы дерева вы используете?
+                        <span class="arrow">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Мы работаем с массивом дуба, ясеня и сосны. Подбираем породу в зависимости от ваших задач и бюджета. Дуб — для премиальных проектов, ясень — для стильных современных интерьеров, сосна — для бюджетных и функциональных решений.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        Сколько времени занимает изготовление?
+                        <span class="arrow">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Сроки зависят от сложности проекта. Столешницы и перегородки делаем за 3-10 дней. Лестницы и большие столы — от 10 до 14 дней. Выезд на замер — в течение 1-2 дней после заявки.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        Есть ли гарантия на вашу мебель?
+                        <span class="arrow">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Да, мы даем гарантию 12 месяцев на все наши деревянные изделия. В течение этого периода бесплатно устраняем любые дефекты, связанные с качеством изготовления.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        Как ухаживать за деревянной мебелью?
+                        <span class="arrow">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Рекомендуем использовать мягкую ткань и специальные средства для ухода за деревом. Избегайте агрессивных химикатов и абразивных материалов. Раз в год можно обновлять масляное покрытие.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Доставка -->
     <section class="section-padding" id="delivery">
         <div class="container">
@@ -1159,13 +1518,13 @@
                     <a href="#contacts" class="btn btn-primary" style="margin-top: 30px;">Узнать стоимость доставки</a>
                 </div>
                 <div class="delivery-img">
-                    <img src="image/dostavka.png" alt="Доставка газелью">
+                    <img src="image/dostavka.png" alt="Доставка мебели по Уфе" loading="lazy">
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Контакты -->
+    <!-- Контакты (только информация + карта) -->
     <section class="section-padding" id="contacts" style="background-color: var(--bg-secondary);">
         <div class="container">
             <div class="section-title reveal">
@@ -1181,7 +1540,7 @@
                         <p>г. Уфа, мкр. Шашка, ул. Гвардейская 41Б</p>
                     </div>
                     <div class="info-item">
-                        <span>Телефон / WhatsApp:</span>
+                        <span>Телефон / MAX:</span>
                         <p>+7-964-954-11-22</p>
                     </div>
                     <div class="info-item">
@@ -1196,36 +1555,27 @@
                         <span>Опыт работы:</span>
                         <p>12 лет (с 2014 года)</p>
                     </div>
+                    <div class="info-item">
+                        <span>Мы в MAX:</span>
+                        <p>@derevyannaya_ufa</p>
+                    </div>
                 </div>
                 
-                <div class="contact-form">
-                    <form onsubmit="event.preventDefault(); alert('Спасибо! Ваша заявка отправлена. Мы свяжемся с вами в течение 15 минут.');">
-                        <div class="form-group">
-                            <label>Ваше имя</label>
-                            <input type="text" class="form-control" placeholder="Иван Иванов" required>
-                        </div>
-                        <div class="form-group">
-                            <label>Телефон</label>
-                            <input type="tel" class="form-control" placeholder="+7 (999) 000-00-00" required>
-                        </div>
-                        <div class="form-group">
-                            <label>Что вас интересует?</label>
-                            <select class="form-control">
-                                <option>Столешница для кухни</option>
-                                <option>Столешница для ванны</option>
-                                <option>Перегородка</option>
-                                <option>Стулья</option>
-                                <option>Стол</option>
-                                <option>Лестница</option>
-                                <option>Другое</option>
-                            </select>
-                        </div>
-                        <button type="submit" class="btn btn-primary" style="width: 100%;">Отправить заявку</button>
-                    </form>
+                <div class="contact-map">
+                    <!-- Яндекс Карта (можно заменить на ваш адрес) -->
+                    <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A1b646398fea9f0b6&amp;source=constructor" width="100%" height="450" frameborder="0"></iframe>
                 </div>
             </div>
         </div>
     </section>
+
+    <!-- Плавающая кнопка MAX -->
+    <a href="#" target="_blank" class="max-float" aria-label="Написать в MAX">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="white">
+            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm1-13h-2v6l5.25 3.15L17 12.23l-4-2.37V7z"/>
+        </svg>
+        <span>Написать в MAX</span>
+    </a>
 
     <!-- Footer -->
     <footer>
@@ -1247,17 +1597,17 @@
                 <div class="footer-col">
                     <h4>Продукция</h4>
                     <ul>
-                        <li><a href="#">Столешницы для кухни</a></li>
-                        <li><a href="#">Столешницы для ванны</a></li>
-                        <li><a href="#">Перегородки</a></li>
-                        <li><a href="#">Лестницы</a></li>
+                        <li><a href="#catalog">Столешницы для кухни</a></li>
+                        <li><a href="#catalog">Столешницы для ванны</a></li>
+                        <li><a href="#catalog">Перегородки</a></li>
+                        <li><a href="#catalog">Лестницы</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
                     <h4>Соцсети</h4>
                     <ul>
-                        <li><a href="#">Telegram</a></li>
                         <li><a href="#">MAX</a></li>
+                        <li><a href="#">Telegram</a></li>
                     </ul>
                 </div>
             </div>
@@ -1280,7 +1630,6 @@
                 mobileToggle.textContent = nav.classList.contains('active') ? '✕' : '☰';
             });
 
-            // Закрытие меню при клике на ссылку
             document.querySelectorAll('nav a').forEach(link => {
                 link.addEventListener('click', () => {
                     nav.classList.remove('active');
@@ -1288,35 +1637,69 @@
                 });
             });
 
-            // 2. Фильтрация товаров
+            // 2. Фильтрация товаров + Показать больше
             const filterBtns = document.querySelectorAll('.filter-btn');
             const products = document.querySelectorAll('.product-card');
+            const showMoreBtn = document.getElementById('showMoreBtn');
+            const productsGrid = document.getElementById('productsGrid');
+            let visibleCount = 9; // Показываем первые 9 товаров
+            let currentFilter = 'all';
 
-            filterBtns.forEach(btn => {
-                btn.addEventListener('click', () => {
-                    // Активный класс кнопки
-                    filterBtns.forEach(b => b.classList.remove('active'));
-                    btn.classList.add('active');
-
-                    const filterValue = btn.getAttribute('data-filter');
-
-                    products.forEach(product => {
-                        if (filterValue === 'all' || product.getAttribute('data-category') === filterValue) {
+            // Функция показа товаров
+            function showProducts(filter, count) {
+                let visible = 0;
+                products.forEach((product, index) => {
+                    const category = product.getAttribute('data-category');
+                    const matchesFilter = filter === 'all' || category === filter;
+                    
+                    if (matchesFilter) {
+                        visible++;
+                        if (visible <= count) {
+                            product.classList.remove('hidden');
                             product.style.display = 'block';
+                            // Плавное появление
                             setTimeout(() => {
                                 product.style.opacity = '1';
                                 product.style.transform = 'translateY(0)';
-                            }, 50);
+                            }, 50 * (index % 3));
                         } else {
-                            product.style.opacity = '0';
-                            product.style.transform = 'translateY(20px)';
-                            setTimeout(() => {
-                                product.style.display = 'none';
-                            }, 400);
+                            product.classList.add('hidden');
+                            product.style.display = 'none';
                         }
-                    });
+                    } else {
+                        product.classList.add('hidden');
+                        product.style.display = 'none';
+                    }
+                });
+                
+                // Показываем/скрываем кнопку
+                const totalVisible = products.length;
+                if (visible > count) {
+                    showMoreBtn.style.display = 'inline-block';
+                } else {
+                    showMoreBtn.style.display = 'none';
+                }
+            }
+
+            // Фильтрация
+            filterBtns.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    filterBtns.forEach(b => b.classList.remove('active'));
+                    btn.classList.add('active');
+                    currentFilter = btn.getAttribute('data-filter');
+                    visibleCount = 9;
+                    showProducts(currentFilter, visibleCount);
                 });
             });
+
+            // Кнопка "Показать больше"
+            showMoreBtn.addEventListener('click', () => {
+                visibleCount += 9;
+                showProducts(currentFilter, visibleCount);
+            });
+
+            // Инициализация: показываем первые 9 товаров
+            showProducts('all', 9);
 
             // 3. Анимация при скролле (Scroll Reveal)
             const revealElements = document.querySelectorAll('.reveal');
@@ -1349,6 +1732,19 @@
                             top: targetElement.offsetTop - 80,
                             behavior: 'smooth'
                         });
+                    }
+                });
+            });
+
+            // 5. Аккордеон для FAQ
+            const faqItems = document.querySelectorAll('.faq-item');
+            faqItems.forEach(item => {
+                const question = item.querySelector('.faq-question');
+                question.addEventListener('click', () => {
+                    const isActive = item.classList.contains('active');
+                    faqItems.forEach(i => i.classList.remove('active'));
+                    if (!isActive) {
+                        item.classList.add('active');
                     }
                 });
             });
