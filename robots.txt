@@ -1,0 +1,24 @@
+# robots.txt для сайта Деревянная Уфа
+# https://деревянная-уфа.рф/robots.txt
+
+User-agent: *
+Allow: /
+
+# Запрещаем индексировать служебные папки
+Disallow: /admin/
+Disallow: /cgi-bin/
+Disallow: /tmp/
+Disallow: /logs/
+Disallow: /backup/
+Disallow: /old/
+
+# Указываем путь к карте сайта
+Sitemap: https://деревянная-уфа.рф/sitemap.xml
+
+# Настройки для Яндекса (важно!)
+Host: https://деревянная-уфа.рф
+
+# Настройки для Google
+User-agent: Googlebot
+Allow: /
+Disallow: /admin/
